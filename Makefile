@@ -1,9 +1,5 @@
-INC=-I./include
-
-default: main
-
-main:	test.cpp src/*
-		g++ -std=c++1z $(INC) -o main test.cpp
+main:	test.cc keras_model.cc
+		g++ -std=c++11 -Wall -O3 test.cc keras_model.cc
 
 clean:
 		rm -r test.o make.out
