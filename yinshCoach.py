@@ -78,4 +78,7 @@ if __name__ == "__main__":
         agent.replay(BATCH_SIZE)
         print("episode: {}/{}, score: {}"
         .format(e, EPISODES, agent.reward))
+		
+	# Save model
+    agent.kerasify()
         
